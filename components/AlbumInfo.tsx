@@ -1,6 +1,7 @@
+import { ReactNode } from "react";
+
 import { css } from "@emotion/react";
 import styled from "@emotion/styled";
-import { ReactNode } from "react";
 
 export const AlbumInfoDiv = styled.div`
   margin-bottom: calc(2em * 1.5);
@@ -44,4 +45,10 @@ export const AlbumInfo = ({ label, tracklisting, streamings, note }: Props) => {
       {note && note}
     </AlbumInfoDiv>
   );
+};
+
+AlbumInfo.defaultProps = {
+  label: undefined,
+  streamings: undefined,
+  note: undefined,
 };

@@ -8,3 +8,5 @@ export const Layout = styled.div`
   line-height: 1.5;
   min-height: 100vh;
 `;
+
+export default Layout;

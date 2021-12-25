@@ -5,3 +5,5 @@ export const Iframe = styled.iframe`
   width: 700px;
   height: 300px;
 `;
+
+export default Iframe;
