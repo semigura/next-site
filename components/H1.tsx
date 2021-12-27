@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const H1 = styled.h1`
-  color: #ddd;
+  color: #eee;
   font-size: 1em;
   margin: 0;
 `;
