@@ -4,7 +4,9 @@ import { css } from "@emotion/react";
 import styled from "@emotion/styled";
 
 export const AlbumInfoDiv = styled.div`
-  margin-bottom: calc(2em * 1.5);
+  border-top: 1px dashed;
+  padding-top: calc(1em * 1.5);
+  margin-top: calc(1em * 1.5);
 `;
 
 interface Props {
