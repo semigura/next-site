@@ -34,4 +34,6 @@ yarn-error.log*
 .vercel
 
 # others
-pages/index.tsx
+!pages/posts/
+package-lock.json
+tsconfig.tsbuildinfo
