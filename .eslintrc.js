@@ -1,6 +1,5 @@
 module.exports = {
   root: true,
-  parser: "eslint-config-next/parser",
   parserOptions: {
     requireConfigFile: false,
     sourceType: "module",
@@ -23,6 +22,7 @@ module.exports = {
   ],
   ignorePatterns: [".next/", "examples/", "node_modules/", "public/"],
   rules: {
+    "react/function-component-definition": "off",
     "jsx-a11y/media-has-caption": "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
