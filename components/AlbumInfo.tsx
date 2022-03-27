@@ -16,7 +16,7 @@ interface Props {
   note?: ReactNode;
 }
 
-export const AlbumInfo = ({ label, tracklisting, streamings, note }: Props) => {
+export function AlbumInfo({ label, tracklisting, streamings, note }: Props) {
   return (
     <AlbumInfoDiv>
       {label && (
@@ -47,7 +47,7 @@ export const AlbumInfo = ({ label, tracklisting, streamings, note }: Props) => {
       {note && note}
     </AlbumInfoDiv>
   );
-};
+}
 
 AlbumInfo.defaultProps = {
   label: undefined,

@@ -2,7 +2,7 @@ import { ReactNode } from "react";
 
 import { css } from "@emotion/react";
 
-const Div = ({ children }: { children: ReactNode }) => {
+function Div({ children }: { children: ReactNode }) {
   return (
     <div
       css={css`
@@ -12,6 +12,6 @@ const Div = ({ children }: { children: ReactNode }) => {
       {children}
     </div>
   );
-};
+}
 
 export default Div;
