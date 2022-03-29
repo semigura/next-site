@@ -13,35 +13,51 @@ module.exports = {
     browser: true,
     node: true
   },
-  extends: ["airbnb", "airbnb/hooks", "plugin:@next/next/recommended", "plugin:cypress/recommended", "plugin:prettier/recommended", "plugin:storybook/recommended"],
+  extends: [
+    "airbnb",
+    "airbnb/hooks",
+    "plugin:@next/next/recommended",
+    "plugin:cypress/recommended",
+    "plugin:prettier/recommended",
+    "plugin:storybook/recommended",
+  ],
   ignorePatterns: [".next/", "examples/", "node_modules/", "public/"],
   rules: {
-    "react/function-component-definition": "off",
     "jsx-a11y/media-has-caption": "off",
     "import/extensions": "off",
     "import/no-unresolved": "off",
-    "react/jsx-filename-extension": ["error", {
-      extensions: [".js", ".jsx", ".ts", ".tsx"]
-    }],
-    "react/react-in-jsx-scope": "off",
-    "import/order": ["error", {
-      alphabetize: {
-        order: "asc",
-        caseInsensitive: true
+    "react/jsx-filename-extension": [
+      "error",
+      {
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
       },
-      "newlines-between": "always",
-      groups: ["builtin", "external", "parent", "sibling", "index"],
-      pathGroups: [{
-        pattern: "react",
-        group: "external",
-        position: "before"
-      }, {
-        pattern: "@/**",
-        group: "external",
-        position: "after"
-      }],
-      pathGroupsExcludedImportTypes: ["builtin"]
-    }]
+    ],
+    "react/react-in-jsx-scope": "off",
+    "import/order": [
+      "error",
+      {
+        alphabetize: {
+          order: "asc",
+          caseInsensitive: true,
+        },
+        "newlines-between": "always",
+        groups: ["builtin", "external", "parent", "sibling", "index"],
+        pathGroups: [
+          {
+            pattern: "react",
+            group: "external",
+            position: "before",
+          },
+          {
+            pattern: "@/**",
+            group: "external",
+            position: "after",
+          },
+        ],
+        pathGroupsExcludedImportTypes: ["builtin"],
+      },
+    ],
+    "consistent-return": "off",
   },
   overrides: [{
     files: ["**/*.ts?(x)"],
