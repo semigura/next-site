@@ -4,7 +4,7 @@ export const Button = styled.button`
   border: 0;
   appearance: none;
   background: transparent;
-  color: skyblue;
+  color: rgb(14 165 233);
   font-size: 1em;
   padding: 0;
   text-decoration: underline;
