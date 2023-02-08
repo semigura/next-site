@@ -34,6 +34,7 @@ yarn-error.log*
 .vercel
 
 # others
-!pages/posts/
 package-lock.json
 tsconfig.tsbuildinfo
+/pages/sandbox*
+/public
